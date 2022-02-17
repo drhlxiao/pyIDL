@@ -192,7 +192,7 @@ def convertScientificNotation(line):
         if loc == -1 or loc == len(line):
             break
         # If it is valid
-        if loc is not 0:
+        if loc != 0:
             # Extract its propterties
             is_scientific, root, exp, root_loc, exp_loc = extractSci(line, loc)
             if is_scientific:
